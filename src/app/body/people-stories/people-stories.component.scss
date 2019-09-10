@@ -1,0 +1,76 @@
+.section-people-stories {
+  padding: 10px 0;
+}
+
+.u-center-text {
+  text-align: center;
+  color: #17a2b8;
+  margin-bottom: 40px;
+}
+
+.story {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  box-shadow: 0 30px 60px rgba(black, 0.5);
+  background-color: white;
+  border-radius: 3px;
+  padding: 20px;
+  font-size: 15px;
+  transform: skewX(-12deg);
+  background-image: linear-gradient(to right bottom, rgba(#d2eff3, 0.4), rgba(#6bdae9, 0.6));
+
+  &__shape {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 0 auto;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: skewX(12deg);
+    position: relative;
+
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__text {
+    transform: skewX(12deg);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    transition: all .5s;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all .5s;
+    backdrop-filter: hidden; 
+    font-weight: 600;
+  }
+
+  &:hover &__caption {  // after hovering into story and go to caption div
+   opacity: 1;
+    transform: translate(-50% -50%);
+  }
+
+  &:hover &__img{
+    transform: scale(.8);
+    filter:blur(10px) brightness(80%);
+  }
+
+}
+
+.primary-heading {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  margin-top: 0 Auto;
+  color: rgba(41, 128, 185, 1);
+}

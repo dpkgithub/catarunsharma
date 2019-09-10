@@ -1,0 +1,25 @@
+.subscribe {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: orange;
+  flex-wrap: wrap;
+  height: 100px;
+  text-align: center;
+}
+
+h1 {
+  display: inline-flex;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-weight: bold;
+}
+
+input{
+  display: inline-flex;
+  width: 50%;
+  align-content: center;
+}

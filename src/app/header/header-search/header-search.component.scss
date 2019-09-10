@@ -1,0 +1,52 @@
+.row {
+  background-color: #17a2b8;
+  height: 50px;
+}
+
+img {
+  border-radius: 0px;
+  padding: 5px;
+  width: 70px;
+}
+
+.btn {
+  padding: 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #FFC107;
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba(236, 27, 27, 0.5);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 10px 30px rgba(236, 27, 27, 0.5);
+    transform: translateY(0);
+  }
+}
+
+
+
+.icon_facebook,
+.icon_linkedin,
+.icon_twitter {
+  color: #FFC107;
+  margin: 10px;
+  font-size: 30px;
+
+  &:hover {
+    transform: translateY(-2px)  scale(1.2);
+    box-shadow: 0 10px 30px rgba(236, 27, 27, 0.5);
+  }
+
+  &:active {
+    box-shadow: 0 10px 30px rgba(236, 27, 27, 0.5);
+    transform: translateY(0);
+  }
+}
+
+.col-2-of-2{
+  text-align: right
+}

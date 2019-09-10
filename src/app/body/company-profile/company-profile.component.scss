@@ -1,0 +1,284 @@
+$font-size:40px;
+$gutter-horizontal:5px; // it is actually teh space between 2 columns
+
+.primary-heading {
+  font-size: $font-size;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  transition: all .2s;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: rgba(41, 128, 185, 1);
+
+  // &:hover {
+  //   transform: skewX(5deg)skewY(5deg) scale(1.1);
+  //   text-shadow: .5rem 1rem 2rem rgba(black, .2);
+  // }
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.primary-heading--sub1 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  perspective: 1500px;
+  -moz-perspective: 1500px;
+  position: relative;
+  height: 350px;
+  border: 0;
+
+
+  &__side {
+    background-color: orangered;
+    height: 350px;
+    transition: all 2s;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    padding: 15px;
+    box-shadow: 0 15px 40px rgba(black, 0.5);
+    border: 0;
+    border-radius: 5px;
+
+    &--front1 {
+      &--heading {
+        text-align: center;
+      }
+
+      background-size: cover;
+      width: 100%;
+      background-image: linear-gradient(to right bottom, rgba(#b9f3fc, 0.8), rgba(#08beda, 1)),
+      url("http://www.monksmedicare.com/wp-content/uploads/2018/02/banner_whoweare2.jpg");
+    }
+
+    &--front2 {
+      &--heading {
+        text-align: center;
+      }
+
+      background-size: cover;
+      width: 100%;
+      background-image: linear-gradient(to right bottom, rgba(#fad796, 0.8), rgba(#e7b93a, 1)),
+      url("http://www.relevantedu.com/assets/img/demo/why_choose.png");
+    }
+
+    &--front3 {
+      &--heading {
+        text-align: center;
+      }
+
+      background-size: contain;
+
+      width: 100%;
+      background-image: linear-gradient(to right bottom, rgba(#f5914e, 0.8), rgba(#964916, 1)),
+      url("https://riverwealthmanagement.com/wp-content/uploads/2014/05/why-different.gif");
+    }
+
+    &--back1 {
+
+      &--heading {
+        text-align: center;
+      }
+
+      width: 100%;
+      background-color: green;
+      transform: rotateY(180deg);
+
+      &--text {
+        padding: 10px;
+
+        ul {
+
+          width: 90%;
+          margin: 0 auto;
+
+          li {
+            padding: 10px;
+            font-size: 15px;
+
+            &:not(:last-child) {
+              border-bottom: 1px solid #eee;
+            }
+          }
+        }
+      }
+    }
+
+    &--back2 {
+
+      &--heading {
+        text-align: center;
+      }
+
+      width: 100%;
+      background-color: green;
+      transform: rotateY(180deg);
+
+      &--text {
+        padding: 10px;
+
+        ul {
+
+          width: 90%;
+          margin: 0 auto;
+
+          li {
+            padding: 10px;
+            font-size: 15px;
+
+            &:not(:last-child) {
+              border-bottom: 1px solid #eee;
+            }
+          }
+        }
+      }
+    }
+
+
+    &--back3 {
+
+      &--heading {
+        text-align: center;
+      }
+
+      width: 100%;
+      background-color: green;
+      transform: rotateY(180deg);
+
+      &--text {
+        padding: 10px;
+
+        ul {
+
+          width: 90%;
+          margin: 0 auto;
+
+          li {
+            padding: 10px;
+            font-size: 15px;
+
+            &:not(:last-child) {
+              border-bottom: 1px solid #eee;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  &:hover &__side--front1 {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--front2 {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--front3 {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back1 {
+    transform: rotateY(0);
+  }
+
+  &:hover &__side--back2 {
+    transform: rotateY(0);
+  }
+
+  &:hover &__side--back3 {
+    transform: rotateY(0);
+  }
+}
+
+
+[class^="col-"] {
+  margin: 0px auto;
+  padding: 20px;
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+  float: left;
+  font-weight: 500;
+
+
+
+  //   width: calc((100% - 2*#{$gutter-horizontal})/3);
+  //   float: left;
+  //   &:not(:last-child) {
+  //     margin-right: $gutter-horizontal;
+  //   }
+}
+
+// .col-1-of-3 {
+//   &:after {
+//     background-image: linear-gradient(to top, rgba(177, 177, 151, 0.8), rgba(250, 250, 81, 0.8));
+//     // background-color: olive;
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     top: 10px;
+//     left: 10px;
+//     right: 10px;
+//     bottom: 10px;
+//     z-index: -1;
+//   }
+// }
+
+// .col-2-of-3 {
+//   &:after {
+//     background-image: linear-gradient(to top, rgba(177, 177, 151, 0.8), rgb(253, 182, 51));
+//     background-color: orange;
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     top: 10px;
+//     left: 10px;
+//     right: 10px;
+//     bottom: 10px;
+//     z-index: -1;
+//   }
+// }
+
+// .col-3-of-3 {
+//   &:after {
+//     background-image: linear-gradient(to top,rgb(240, 232, 222),rgb(240, 200, 147));
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     top: 10px;
+//     left: 10px;
+//     right: 10px;
+//     bottom: 10px;
+//     z-index: -1;
+//   }
+// }
+
+.heading-who-we-are {
+  text-align: center;
+}
+
+// [class^:"-col"] {}

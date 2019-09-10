@@ -1,0 +1,64 @@
+.row {
+  background-color: #ffc107;
+  height: 10px;
+}
+
+.navbar {
+  background: #fff;
+  height: 50px;
+  -o-transition: all .6s;
+  -moz-transition: all .6s;
+  -webkit-transition: all .6s;
+  -ms-transition: all .6s;
+  transition: all .6s;
+  backface-visibility: hidden;
+}
+
+.navbar-dark .navbar-nav .navbar-brand {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #444;
+  color: rgba(14, 13, 13, 0.8);
+  border: 2;
+}
+
+
+.nav:link,
+.nav:visited {
+  text-transform: uppercase;
+  text-decoration: red;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: all .2s;
+  position: relative;
+  /* background-color: aqua; */
+}
+
+.nav:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(99, 49, 49, 0.5);
+  background-color: #FFC107
+}
+
+.nav:focus {
+  transform: translateY(0px);
+  box-shadow: 0 10px 30px rgba(99, 49, 49, 0.5);
+  background-color: #FFC107
+}
+
+.nav:active {
+  transform: translateY(1px);
+  box-shadow: 0 10px 30px rgba(168, 11, 11, 0.5)
+}
+
+.nav-link {
+  background-color: #ffffff;
+  /* background color of the link*/
+  color: #777;
+  /*color of the text */
+
+}
